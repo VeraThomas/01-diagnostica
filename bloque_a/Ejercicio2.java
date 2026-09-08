@@ -2,11 +2,15 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        // TODO: Instancia la clase Scanner
+        Scanner entrada = new Scanner(System.in);
+        double a = entrada.nextDouble();
+        double b = entrada.nextDouble();
 
-        // TODO: Lee dos números por teclado
+    System.out.println(a + b);
+    System.out.println(a - b);
+    System.out.println(a * b);
+    System.out.println(a / b);
 
-        // TODO: Calcula y muestra suma, resta, multiplicación y división
-
+    entrada.close();
     }
 }

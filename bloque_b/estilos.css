@@ -9,4 +9,16 @@
  * 3. Aplica un layout moderno usando Flexbox (display: flex) o CSS Grid (display: grid).
  */
 
-/* TODO: Escribe aquí tus reglas de estilos CSS */
+
+.caja-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#cabecera {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    margin: 5px;
+}
