@@ -12,8 +12,20 @@
  *     (por ejemplo al hacer click en #btn-saludar o #btn-limpiar).
  */
 
-// TODO: C2. Selecciona los elementos del DOM necesarios con const
+    const btnAccion = document.querySelector("#btn-saludar");
+    const btnReset = document.querySelector("#btn-limpiar");
+    const inputUsuario = document.querySelector("#input-nombre");
+    const visorResultado = document.querySelector("#mensaje-resultado");
 
-// TODO: C3. Declara una función nombrada para procesar el saludo
+function procesarSaludo() {
+      let valorUsuario = inputUsuario.value;
+      visorResultado.textContent = "Bienvenido " + valorUsuario;
+}
 
-// TODO: C4 y C5. Agrega los eventos addEventListener para actualizar la pantalla
+function limpiarTodo() {
+      inputUsuario.value = "";
+      visorResultado.textContent = "Esperando interacción...";
+}
+
+    btnAccion.addEventListener("click", procesarSaludo);
+    btnReset.addEventListener("click", limpiarTodo);
